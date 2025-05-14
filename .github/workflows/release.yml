@@ -97,7 +97,7 @@ jobs:
             - name: Make OPA executable
               run: chmod +x ./opa
             - name: Build and package release assets
-              run: ./opa build -b cape/ cape-opa-bundle.tar.gz
+              run: ./opa build -b cape/ -o cape-opa-bundle.tar.gz
             - uses: softprops/action-gh-release@v2
               name: Tag Release
               with:
